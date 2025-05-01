@@ -36,5 +36,5 @@ def shop_trip() -> None:
         best.print_receipt(cust.name, cust.product_cart)
         print(f"{cust.name} rides home")
         cust.ride_home()
-        cust.money = cust.money - cust.trip_cost(best, fuel)
+        cust.money = cust.money - x
         print(f"{cust.name} now has {round(cust.money, 2)} dollars\n")
