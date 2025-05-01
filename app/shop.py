@@ -20,8 +20,7 @@ class Shop:
         print("You have bought:")
         for product, qty in product_cart.items():
             price = self.products[product] * qty
-            print(f"{qty} {product}s"
-                  f" for {int(price) if price == int(price)
+            print(f"{qty} {product}s for {int(price) if price == int(price)
                   else price} dollars")
         print(f"Total cost"
               f" is {self.calculate_cart_price(product_cart)} dollars")
