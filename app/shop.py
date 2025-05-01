@@ -1,5 +1,5 @@
 from __future__ import annotations
-from datetime import datetime
+import datetime
 
 
 class Shop:
@@ -13,8 +13,8 @@ class Shop:
                    for prod, qty in product_cart.items())
 
     def print_receipt(self, customer_name: str, product_cart: dict) -> None:
-        now = datetime.now()
-        dt_string = now.strftime("%m/%d/%Y %H:%M:%S")
+        now = datetime.datetime.now()
+        dt_string = now.strftime("%d/%m/%Y %H:%M:%S")
         print(f"Date: {dt_string}")
         print(f"Thanks, {customer_name}, for your purchase!")
         print("You have bought:")
